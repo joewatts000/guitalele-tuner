@@ -3,18 +3,46 @@
   <head>
     <meta charset="utf-8">
     <title>Giutalele tuner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
+  <style media="screen">
+    html, body {
+      margin: 0;
+    }
+
+    .note-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    button {
+      width: 45%;
+      height: 20vh;
+      padding: 0;
+      border: 1px solid #000;
+      border-radius: 10px;
+      margin-bottom: 18px;
+    }
+
+    button:active, button:focus {
+      outline: none;
+    }
+
+  </style>
   <body>
     <h1>Giuitalele Tuner</h1>
 
-    <ul>
-      <li> <button type="button" name="button" onclick="playSound('a');">A</button> </li>
-      <li> <button type="button" name="button" onclick="playSound('d');">D</button> </li>
-      <li> <button type="button" name="button" onclick="playSound('g');">G</button> </li>
-      <li> <button type="button" name="button" onclick="playSound('c');">C</button> </li>
-      <li> <button type="button" name="button" onclick="playSound('e');">E</button> </li>
-      <li> <button type="button" name="button" onclick="playSound('ahigh');">A</button> </li>
-    </ul>
+    <div class="note-buttons">
+      <button type="button" name="button" onclick="playSound('a');">A</button>
+      <button type="button" name="button" onclick="playSound('d');">D</button>
+      <button type="button" name="button" onclick="playSound('g');">G</button>
+      <button type="button" name="button" onclick="playSound('c');">C</button>
+      <button type="button" name="button" onclick="playSound('e');">E</button>
+      <button type="button" name="button" onclick="playSound('ahigh');">A</button>
+    </div>
+
     <p>Thats it!</p>
     <audio src='./audio/A.mp3' id='a-note'></audio>
     <audio src='./audio/D.mp3' id='d-note'></audio>
