@@ -47,10 +47,12 @@ class GuitaleleNote extends Component {
 
   render() {
     return (
-      <React.Fragment>
-        <button type="button" name={this.props.name} onClick={this.playSound}>{this.props.name}</button>
+      <div>
+        <button type='button' name={this.props.name} onClick={this.playSound}>
+          <span>{this.props.name.replace('high', '')}</span>
+        </button>
         <audio src={this.src} ref={this.audioElementRef}></audio>
-      </React.Fragment>
+      </div>
     )
   }
 }
