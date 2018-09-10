@@ -1,6 +1,6 @@
 # Guitalele Tuner
 
-## A tuner for the guitalele as none exists so far
+## A tuner for the guitalele
 
 ### `npm start`
 
